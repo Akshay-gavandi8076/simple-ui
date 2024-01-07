@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/simple-ui-umd.cjs",
+  "module": "dist/simple-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/simple-ui.js",
+      "require": "./dist/simple-ui-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -42,7 +53,8 @@
     "eslint-plugin-storybook": "^0.6.15",
     "storybook": "^7.6.7",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
