@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Simple UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple UI is a lightweight and typesafe UI Library crafted using React, Typescript, TailwindCSS, and Storybook for streamlined development and efficient UI creation.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We utilize Storybook as a platform to demonstrate the variety of components implemented within this library. To initiate Storybook, follow these steps:
 
-## Expanding the ESLint configuration
+1. Install the necessary dependencies using `yarn` or `npm`:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Launch Storybook using:
+   ```bash
+   yarn storybook
+   # or
+   npm run storybook
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+This will open up a local server displaying the collection of components and their functionalities.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Built With
+
+- **[React](https://react.dev/):** A robust JavaScript library for building user interfaces.
+- **[Typescript](https://www.typescriptlang.org/):** Provides type-checking to reduce errors during development.
+- **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for easily building custom designs.
+- **[Storybook](https://storybook.js.org/):** A development environment for UI components to aid in their visualization and testing.
+- **[Vite](https://vitejs.dev/):** The web framework used for building the project.
